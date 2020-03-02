@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 47, Failures: 8, Errors: 0, Skipped: 10, Time elapsed: 15.801 s <<< FAILURE! - in TestSuite
+com.employeeapi.testCases.TC001_Get_All_Employees.checkContentType  Time elapsed: 0.104 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json;charset=utf-8] but found [application/json; charset=UTF-8]
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkContentType(TC001_Get_All_Employees.java:86)
+
+com.employeeapi.testCases.TC001_Get_All_Employees.checkResponseTime  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC001_Get_All_Employees.checkResponseTime(TC001_Get_All_Employees.java:67)
+
+com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentLength  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentLength(TC002_Get_Single_Employee_Record.java:104)
+
+com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentType  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/html;charset=UTF-8] but found [text/html; charset=UTF-8]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkContentType(TC002_Get_Single_Employee_Record.java:79)
+
+com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkStatusCode  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkStatusCode(TC002_Get_Single_Employee_Record.java:49)
+
+com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkStatusLine  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 404 Not Found] but found [HTTP/1.1 200 OK]
+	at com.employeeapi.testCases.TC002_Get_Single_Employee_Record.checkStatusLine(TC002_Get_Single_Employee_Record.java:69)
+
+com.employeeapi.testCases.TC004_Put_Employee_Record.checkResponseBody  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employeeapi.testCases.TC004_Put_Employee_Record.checkResponseBody(TC004_Put_Employee_Record.java:54)
+
+com.employeeapi.testCases.TC005_Delete_Employee_Record.deleteEmployee  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.deleteEmployee(TC005_Delete_Employee_Record.java:35)
+

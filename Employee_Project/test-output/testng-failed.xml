@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [restassuredtestsuite]">
+  <test thread-count="5" name="restassustedtest(failed)">
+    <classes>
+      <class name="com.employeeapi.testCases.TC002_Get_Single_Employee_Record">
+        <methods>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+          <include name="checkStatusLine"/>
+          <include name="checkContentLength"/>
+          <include name="setup"/>
+          <include name="checkContentType"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC002_Get_Single_Employee_Record -->
+      <class name="com.employeeapi.testCases.TC001_Get_All_Employees">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="checkResponseTime"/>
+          <include name="getAllEmployees"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC001_Get_All_Employees -->
+      <class name="com.employeeapi.testCases.TC005_Delete_Employee_Record">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="checkStatusLine"/>
+          <include name="checkServerType"/>
+          <include name="checkContentLength"/>
+          <include name="setup"/>
+          <include name="deleteEmployee"/>
+          <include name="checkResponseBody"/>
+          <include name="tearDown"/>
+          <include name="checkContentEncoding"/>
+          <include name="checkStatusCode"/>
+          <include name="checkCookies"/>
+          <include name="checkResponseTime"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC005_Delete_Employee_Record -->
+      <class name="com.employeeapi.testCases.TC004_Put_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC004_Put_Employee_Record -->
+    </classes>
+  </test> <!-- restassustedtest(failed) -->
+</suite> <!-- Failed suite [restassuredtestsuite] -->
